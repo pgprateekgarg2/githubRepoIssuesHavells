@@ -22,7 +22,7 @@ app.use(express.static("public"))
 app.use(bodyParser.urlencoded({extended:true}))
 
 // port
-const port = 3000
+const port = process.env.PORT || 3000
 
 // total number of issues count
 let totalIssues = 0
