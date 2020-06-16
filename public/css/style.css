@@ -1,0 +1,80 @@
+/* styles for body and html */
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color:black;
+    color: white;
+    background-position: center;
+    background-size: cover;
+}
+
+/* style for main div */
+#main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#repoLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 60%;
+    background-color: #000000ba;
+    border: 10px solid;
+    border-radius: 20px;
+    box-shadow: 0px -2px 30px 0px rgba(247,247,247,0.43);
+    transition: border-color 0.5s;
+
+}
+/* heading  */
+h1{
+    font-family: 'Staatliches', cursive;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+/* form  */
+form{
+    margin: 50px;
+}
+
+/* focus for input form */
+*:focus {
+    outline: none;
+}
+
+/* table data padding */
+table td{
+    padding: 15px;
+}
+
+/* input field style */
+#repoLink form input{
+    height: 2rem;
+    width:40rem;
+    background-color:  #000000;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* submit button style */
+#repoLink form button{
+    height: 2.4rem;
+    background-color: #96989a26;
+    border: 0px;
+    cursor: pointer;
+    color:white;
+    border-radius: 20px;
+    padding: 10px;
+    margin-left: 20px;
+}
+

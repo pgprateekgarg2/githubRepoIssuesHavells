@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- stylecheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- google font  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <title>Count Of Issue</title>
+  </head>
+  <body>
+
+    <div id="main">
+      <div id="repoLink">
+        <h1>Enter The URL for Repository</h1>
+        <!-- name of repository owner -->
+        <p>
+          Owner:-
+          <span
+            ><%= owner%> 
+            &nbsp; &nbsp; 
+            <!-- name of repository -->
+            Repository:-
+            <span><%= repo%></span></span
+          >
+        </p>
+
+        <!-- input form -->
+        <form action="/" class="" method="POST">
+          <input type="text" name="link" required />
+          <button type="submit" name="button">Get No Of Issues</button>
+        </form>
+        <!-- table for value  -->
+        <div id="values">
+          <table>
+            <tr>
+              <td><p>Total Number of Issues in Repository</p></td>
+              <td><%= totalIssues%></td>
+            </tr>
+            <tr>
+              <td><p>Numbers of Issues Opened in Last 24 Hours</p></td>
+              <td><%= issuesWithInADay%></td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  Number of Issues Opened Before 24 Hours but With in a week
+                </p>
+              </td>
+              <td><%= issuesWithInAWeek%></td>
+            </tr>
+            <tr>
+              <td><p>Number of Issues Opened More than 24 Hours ago</p></td>
+              <td><%= issuesBeforeAWeek%></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // function to generate random colors for div border
+    function random_bg_color() {
+      var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+      document.getElementById("repoLink").style.borderColor = randomColor;
+    }
+    setInterval(() => {
+      random_bg_color();
+    }, 500);
+  </script>
+</html>
