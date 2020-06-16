@@ -47,6 +47,22 @@ app.get('/',(req,res)=>{
 
 // rendering the template
 res.render('index',{totalIssues,issuesWithInADay,issuesWithInAWeek,issuesBeforeAWeek,owner,repo})
+totalIssues = 0
+
+// count for issues in last 24 hours
+issuesWithInADay = 0
+
+// count of issues in last 7 days
+issuesWithInAWeek = 0
+
+// count of issues before 7 days
+issuesBeforeAWeek = 0
+
+// name of repository owner
+owner = 'name'
+
+// name of repository
+ repo = 'name'
 
 })
 
@@ -131,6 +147,7 @@ app.post('/',async(req,res)=>{
         res.send({message:'Internal server error or check your link'})
     }
 })
+
 
 // starts the server on the defined port
 app.listen(port,()=>{

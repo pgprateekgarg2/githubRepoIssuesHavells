@@ -19,5 +19,13 @@
     "express": "^4.17.1",
     "moment": "^2.26.0",
     "nodemon": "^2.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pgprateekgarg2/gitissuecounterhavells.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pgprateekgarg2/gitissuecounterhavells/issues"
+  },
+  "homepage": "https://github.com/pgprateekgarg2/gitissuecounterhavells#readme"
 }
