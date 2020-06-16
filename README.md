@@ -49,4 +49,7 @@ if the repo 'created_at < (today's date and current time')-168 hours  then issue
 And the result is displayed in the window
 
 
+EJS (Embedded javascript is used ) is used as templating engine.
+
+
 Live link :- https://gitissuecounterhavells.herokuapp.com/
