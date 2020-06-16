@@ -46,4 +46,7 @@ array = []
 
 if the repo 'created_at < (today's date and current time')-168 hours  then issue is appended to array and Number of open issues that were opened more than 7 days ago  = length of array
 
-hence the result is displayed in the window
+And the result is displayed in the window
+
+
+Live link :- https://gitissuecounterhavells.herokuapp.com/
